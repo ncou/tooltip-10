@@ -1,12 +1,12 @@
 Tooltip
 -------
-_A simple reusable tooltip jquery component
+_A simple reusable tooltip jquery component_
 
 #### Demo
-[https://github.com/leomanlapera/tooltip]
+[https://github.com/leomanlapera/tooltip](https://github.com/leomanlapera/tooltip)
 
 #### Setup
-Just add a link to the css file in your `<head>`:
+Just add a link to the css file in your `<head>`
 
 ```html
 <link rel="stylesheet" type="text/css" href="css/tooltip.css">
