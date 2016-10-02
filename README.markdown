@@ -1,6 +1,6 @@
 Tooltip
 -------
-_A simple reusable tooltip jquery component_
+_A simple reusable tooltip jquery plugin_
 
 #### Demo
 [https://leomanlapera.github.io/tooltip/](https://leomanlapera.github.io/tooltip/)
