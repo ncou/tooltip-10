@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Tooltip</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/tooltip.css">
+		<link rel="stylesheet" type="text/css" href="css/button.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1 class="title">Tooltip jQuery Plugin</h1>
+				<div class="title-sub">A simple reusable component using <span class="hl">HTML/CSS</span> and <span class="hl">jQuery</span>, here is the <a href="" class="hl">github code</a>.</div>
+			</div>
+		</header>
+		<div class="container">
+			<h3>Default tooltip</h3>
+			<p>The lysine <span class="tooltip tooltip-default" data-content="They act like they haven't seen you in a year. And the good thing about dogs...">default tooltip</span> it's contingency to prevent the spread of the animals is case they ever got off the island. Dr. Wu inserted a gene that makes a single faulty enzyme in protein metabolism. The animals can't manufacture the amino acid lysine. Unless they're continually supplied with lysine by us, they'll slip into a coma and die.</p>
+			<h3>Right tooltip with custom color</h3>
+			<p>Do <span class="tooltip tooltip-right" data-content="that's what you see at a toy store. And you must think you're in a toy store">right tooltip?</span> you see Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+			<h3>Bottom tooltip with custom color</h3>
+			<p>Well, the way they make shows is, they make <span class="tooltip tooltip-bottom" data-content="They're going to make more shows.">bottom tooltip</span>. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+			<h3>Left tooltip with custom color</h3>
+			<p>You see? It's curious. Ted <span class="tooltip tooltip-left" data-content="We gonna tell everyone. How it's possible, how it's done, what the dangers are.">left tooltip</span> did figure it out - time travel. And when we get back, we gonna tell everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in the future when the spacecraft encounters a black hole does the computer call it an 'unknown entry event'? Why don't they know? If they don't know, that means we never told anyone. And if we never told anyone it means we never made it back. Hence we die down here. Just as a matter of deductive logic.</p>
+		</div>
+		<div class="container">
+			<h3>Tooltip with buttons</h3>
+			<a href="" class="tooltip button button-default" data-content="They're going to make more shows.">Tooltip top</a>
+			<a href="" class="tooltip button button-bottom" data-content="They're going to make more shows.">Tooltip bottom</a>
+			<h3>Tooltip with fontawesome</h3>
+			<div>
+				<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. <span class="tooltip fa-default" data-content="I like animals better than people sometimes... Especially dogs. Dogs are the best."><i class="fa fa-info-circle" aria-hidden="true"></i></span></p>
+				<p>Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people. Like pit bulls. <span class="tooltip fa-default" data-content="I like animals better than people sometimes... Especially dogs. Dogs are the best."><i class="fa fa-heart" aria-hidden="true"></i></span></p>
+			</div>
+		</div>
+		<footer class="footer container">&copy; Copyright 2016 June Leoman Lapera</footer>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tooltip.js"></script>
+		<script type="text/javascript">
+			// default top
+			$('.tooltip-default').tooltip();
+
+			// position right
+			$('.tooltip-right').tooltip({
+				position: 'right',
+				contentBGColor: '#673AB7',
+				labelColor: '#673AB7'
+			});
+
+			// tooltip bottom
+			$('.tooltip-bottom').tooltip({
+				position: 'bottom',
+				contentBGColor: '#4CAF50',
+				labelColor: '#4CAF50'
+			});
+
+			// tooltip left
+			$('.tooltip-left').tooltip({
+				position: 'left',
+				contentBGColor: '#212121'
+			});
+
+			// buttons
+			$('.button-default').tooltip();
+			$('.button-bottom').tooltip({
+				position: 'bottom'
+			});
+
+			// fontawesome
+			$('.fa-default').tooltip();
+		</script>
+	</body>
+</html>
